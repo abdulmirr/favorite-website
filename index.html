@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>favorite — your taste, beautifully archived</title>
+<meta name="description" content="A personal library for everything you love. Films, books, albums, podcasts, the YouTube video you can't stop thinking about. Letterboxd for everything." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400;1,6..72,500&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css?v=31" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <a class="brand" href="#top">
+    <img class="brand-logo" src="assets/favorite-logo.png" alt="favorite" />
+  </a>
+  <nav class="nav-links">
+    <a href="#waitlist" class="pill">Join waitlist</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="hero">
+  <div class="hero-wall" id="hero-wall"></div>
+  <div class="hero-vignette"></div>
+
+  <div class="hero-content">
+    <h1 class="h-display word-reveal" data-words>Your taste, beautifully archived.</h1>
+
+    <div class="hero-cta reveal">
+      <form class="waitlist-form" data-waitlist>
+        <input type="email" name="email" placeholder="you@somewhere.com" required autocomplete="email" />
+        <button class="pill" type="submit"><span class="plus" aria-hidden="true"></span>Join the waitlist</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROFILE ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="h-section" style="font-size: 56px; font-weight: 500">Library for everything you love.</h2>
+      <p class="section-sub reveal" style="font-family: Geist; font-size: 16px">Letterboxd, Goodreads &amp; Spotify all in one place. Log, rate, review your favorite media. </p>
+    </div>
+
+    <div class="profile-row">
+      <div class="phone reveal">
+        <div class="phone-screen">
+          <div class="phone-notch"></div>
+          <div class="phone-status">
+            <span>9:41</span>
+            <span>● ● ●</span>
+          </div>
+          <div class="phone-content">
+            <div class="profile-banner" style="background: url('assets/city%20of%20god.webp') center/cover no-repeat;"></div>
+            <div class="profile-id">
+              <div class="profile-avatar" style="background: url('assets/abdul1.jpg') center/cover no-repeat;"></div>
+              <div>
+                <div class="profile-name">Abdul Mir</div>
+                <div class="profile-handle">@abdulmir</div>
+              </div>
+            </div>
+            <div class="profile-bio">A super awesome, handsome, jacked film lover.</div>
+            <div class="profile-tabs">
+              <span class="active">Top 3</span>
+              <span>Lists</span>
+              <span>Library</span>
+              <span>Activity</span>
+            </div>
+            <div class="top3-label">Top 3 — Films</div>
+            <div class="top3-row" id="top3-row"></div>
+            <div class="top3-label" style="margin-top:4px">Recently added</div>
+            <div class="recently-added-grid">
+              <div class="recently-col">
+                <div class="tile has-cover square" style="--tile-tone:#1b1814"><img class="tile-image" src="assets/covers/album-bully.png" alt="Bully" loading="lazy" referrerpolicy="no-referrer" /><div class="tile-overlay"><div class="h">Bully</div><div class="c">Ye</div></div></div>
+                <div class="tile has-cover square" style="--tile-tone:#1c1814"><img class="tile-image" src="assets/covers/album-rocket-dominic-fike.jpg" alt="Rocket" loading="lazy" referrerpolicy="no-referrer" /><div class="tile-overlay"><div class="h">Rocket</div><div class="c">D. Fike</div></div></div>
+                <div class="tile has-cover square" style="--tile-tone:#161616"><img class="tile-image" src="assets/covers/album-casino-baby-keem.png" alt="Ca$ino" loading="lazy" referrerpolicy="no-referrer" /><div class="tile-overlay"><div class="h">Ca$ino</div><div class="c">B. Keem</div></div></div>
+              </div>
+              <div class="recently-col">
+                <div class="tile has-cover" style="--tile-tone:#181a1c"><img class="tile-image" src="assets/covers/book-red-rising.jpg" alt="Red Rising" loading="lazy" referrerpolicy="no-referrer" /><div class="tile-overlay"><div class="h">Red Rising</div><div class="c">P. Brown</div></div></div>
+                <div class="tile has-cover" style="--tile-tone:#181614"><img class="tile-image" src="assets/covers/book-elon-musk.jpg" alt="Elon Musk" loading="lazy" referrerpolicy="no-referrer" /><div class="tile-overlay"><div class="h">Elon Musk</div><div class="c">W. Isaacson</div></div></div>
+              </div>
+              <div class="recently-col">
+                <div class="tile has-cover square" style="--tile-tone:#15161a"><img class="tile-image" src="assets/covers/podcast-the-book-of-elon.jpg" alt="The Book of Elon" loading="lazy" referrerpolicy="no-referrer" /><div class="tile-overlay"><div class="h">The Book of Elon</div><div class="c">D. Senra · E. Jorgenson</div></div></div>
+                <div class="tile has-cover wide" style="--tile-tone:#171818"><img class="tile-image" src="assets/covers/video-build-cool-shit.jpg" alt="Build Cool Shit in Public" loading="lazy" referrerpolicy="no-referrer" /><div class="tile-overlay"><div class="h">Build Cool Shit in Public</div><div class="c">YouTube</div></div></div>
+                <div class="tile has-cover wide" style="--tile-tone:#161616"><img class="tile-image" src="assets/covers/video-jensen-huang-lex-fridman.jpg" alt="Jensen Huang × Lex Fridman" loading="lazy" referrerpolicy="no-referrer" /><div class="tile-overlay"><div class="h">Jensen Huang</div><div class="c">Lex Fridman</div></div></div>
+                <div class="tile has-cover wide" style="--tile-tone:#15161a"><img class="tile-image" src="assets/covers/video-fred-again-bangalter.jpg" alt="Fred again.. × Thomas Bangalter" loading="lazy" referrerpolicy="no-referrer" /><div class="tile-overlay"><div class="h">Fred again.. × Bangalter</div><div class="c">USB002 · Ally Pally</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-callouts reveal">
+        <!-- Phone callout: arrow points from text down-left to phone -->
+        <div class="callout callout-left">
+          <svg class="callout-arrow arrow-left" viewBox="0 0 160 110" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <!-- starts near phone (bottom-left), curves up & right, arrowhead stops short of the text -->
+            <path d="M14 96 C 26 80, 50 62, 96 46" />
+            <path d="M82 42 L 98 44 L 94 60" />
+          </svg>
+          <h3 class="callout-h">Curate your profile.</h3>
+          <p class="callout-p">Rate what you love, save what stands out, build a library that reflects your taste.</p>
+        </div>
+
+        <!-- Rec callout: arrow points from text down-right to card -->
+        <div class="callout callout-right">
+          <svg class="callout-arrow arrow-right" viewBox="0 0 160 110" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <!-- starts near rec card (top-right), curves down & left, arrowhead stops short of the text -->
+            <path d="M146 14 C 134 32, 110 54, 64 68" />
+            <path d="M78 72 L 62 70 L 66 54" />
+          </svg>
+          <h3 class="callout-h">Selected recommendations.</h3>
+          <p class="callout-p" style="text-align: right">Picks built from the things you already love. Every suggestion comes with a reason.</p>
+        </div>
+      </div>
+
+      <div class="profile-side reveal">
+        <div class="rec-card">
+          <div class="rec-cover tile has-cover" style="--tile-tone:#1a1612">
+            <img class="tile-image" src="assets/covers/film-nightcrawler.jpg" alt="Nightcrawler" loading="lazy" referrerpolicy="no-referrer" />
+            <div class="tile-kind">FILM</div>
+            <div class="tile-meta">
+              <div class="tile-title">Nightcrawler</div>
+              <div class="tile-cred">Dan Gilroy · 2014</div>
+            </div>
+          </div>
+          <div class="rec-body">
+            <h3 class="rec-title">Nightcrawler</h3>
+            <div class="rec-meta">FILM · Dan Gilroy · 2014</div>
+            <div class="rec-rationale">
+              <p>Because you loved <em>Uncut Gems</em> and <em>The Social Network</em> &mdash; character studies of driven men chasing the next score. This one watches with the same nervous pulse.</p>
+            </div>
+            <div class="rec-friends">
+              <div class="avatars">
+                <div class="avatar"><img src="assets/avatars/avatar-44.jpg" alt="" referrerpolicy="no-referrer" /></div>
+                <div class="avatar"><img src="assets/avatars/avatar-12.jpg" alt="" referrerpolicy="no-referrer" /></div>
+                <div class="avatar"><img src="assets/avatars/avatar-33.jpg" alt="" referrerpolicy="no-referrer" /></div>
+                <div class="avatar"><img src="assets/alipfp.jpg" alt="Ali" /></div>
+              </div>
+              <div class="rec-friends-text"><b>Jules</b> and <b>Ali</b> favorited this.</div>
+            </div>
+            <div class="rec-actions">
+              <button class="rec-btn primary"><span class="plus" aria-hidden="true"></span>Favorite</button>
+              <button class="rec-btn">Save for later</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANIFESTO ============ -->
+<section class="manifesto" id="manifesto">
+  <div class="wrap">
+    <p class="manifesto-anchor reveal">We&rsquo;re building a platform to document your taste without the noise of Instagram.</p>
+
+    <div class="manifesto-body reveal">
+      <p style="text-align: left; font-weight: 400">We believe there's a gap: a need for a place to express your taste and see all the things you and your friends love. Current social media is too loud. The feed rewards attention instead of intention.</p>
+
+      <p style="text-align: left">The best recommendations we've ever gotten didn't come from an algorithm. They came from a friend who knew us, who handed us a book, sent us a song, told us to watch something at exactly the right moment. That's what we're trying to build a home for.</p>
+
+      <p>We're building favorite for the artist, the lover, the intentionalist. A library you build slowly. A record of every book, film, article you&rsquo;ve loved. A place to share and discover what shaped you and the people whose taste you trust.</p>
+
+      <p>We hope you enjoy using this tool half as much as we enjoyed making it for you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final" id="waitlist">
+  <div class="wrap">
+    <img class="final-mark reveal" src="assets/favoritestar.png" alt="" aria-hidden="true" />
+
+    <h2 class="h-display reveal">Build your library.</h2>
+
+    <form class="final-form reveal" data-waitlist>
+      <div class="waitlist-form" style="max-width:none">
+        <input type="email" name="email" placeholder="you@somewhere.com" required autocomplete="email" />
+        <button class="pill" type="submit"><span class="plus" aria-hidden="true"></span>Join the waitlist</button>
+      </div>
+    </form>
+
+    <footer>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://abdulmir.com/chat.html">Contact</a>
+      <a href="terms.html">Terms</a>
+    </footer>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js?v=12"></script>
+</body>
+</html>
