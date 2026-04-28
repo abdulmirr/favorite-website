@@ -1254,8 +1254,8 @@ footer a:hover { color: var(--fg); }
   .nav-links { gap: 16px; }
   .nav-links a:not(.pill) { display: none; }
   .hero { padding: 120px 20px 100px; min-height: auto; }
-  .hero-wall { grid-template-columns: repeat(2, 1fr); }
-  .hero-wall .wall-col:nth-child(n+3) { display: none; }
+  .hero-wall { grid-template-columns: repeat(4, 1fr); }
+  .hero-wall .wall-col:nth-child(n+5) { display: none; }
   .section { padding: 100px 0; }
   .pitch-bottom { grid-template-columns: 1fr; gap: 40px; }
   .cat-grid { grid-template-columns: repeat(3, 1fr); }
