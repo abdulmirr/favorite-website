@@ -272,7 +272,7 @@ section { position: relative; z-index: 2; }
   inset: 0;
   z-index: 0;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 14px;
   padding: 0 14px;
   opacity: 0.55;
@@ -291,6 +291,7 @@ section { position: relative; z-index: 2; }
 .wall-col:nth-child(5) { animation-duration: 75s; }
 .wall-col:nth-child(6) { animation-duration: 62s; animation-direction: reverse; }
 .wall-col:nth-child(7) { animation-duration: 88s; }
+.wall-col:nth-child(8) { animation-duration: 66s; animation-direction: reverse; }
 
 @keyframes drift {
   from { transform: translateY(0); }

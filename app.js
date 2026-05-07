@@ -34,29 +34,28 @@ const films = [
   ["Inception", "Christopher Nolan · 2010", "#1f1418", "assets/covers/film-inception.jpg"],
   ["Interstellar", "Christopher Nolan · 2014", "#181a1c", "assets/covers/film-interstellar.jpg"],
   ["Pulp Fiction", "Quentin Tarantino · 1994", "#1a1916", "assets/covers/film-pulp-fiction.jpg"],
-  ["Goodfellas", "Martin Scorsese · 1990", "#161c1a", "assets/covers/film-goodfellas.jpg"],
   ["The Dark Knight", "Christopher Nolan · 2008", "#15171c", "assets/covers/film-the-dark-knight.jpg"],
   ["There Will Be Blood", "Paul Thomas Anderson · 2007", "#191614", "assets/covers/film-there-will-be-blood.jpg"],
-  ["No Country for Old Men", "Coen Brothers · 2007", "#1c1717", "assets/covers/film-no-country-for-old-men.jpg"],
   ["Anatomy of a Fall", "Justine Triet · 2023", "#1c1a14", "assets/covers/film-anatomy-of-a-fall.jpg"],
+  ["Challengers", "Luca Guadagnino · 2024", "#1c1612", "assets/covers/film-challengers.jpg"],
+  ["Saltburn", "Emerald Fennell · 2023", "#1a1614", "assets/covers/film-saltburn.jpg"],
+  ["Poor Things", "Yorgos Lanthimos · 2023", "#181a1c", "assets/covers/film-poor-things.jpg"],
+  ["Anora", "Sean Baker · 2024", "#1c1818", "assets/covers/film-anora.jpg"],
+  ["The Substance", "Coralie Fargeat · 2024", "#1f1418", "assets/covers/film-the-substance.jpg"],
 ];
 const albums = [
   ["Blonde", "Frank Ocean · 2016", "#1b1814", "assets/covers/album-blonde.jpeg"],
-  ["For Emma, Forever Ago", "Bon Iver · 2007", "#161a1c", "assets/covers/album-for-emma-forever-ago.jpg"],
   ["Carrie & Lowell", "Sufjan Stevens · 2015", "#181c1a", "assets/covers/album-carrie-lowell.jpg"],
   ["Punisher", "Phoebe Bridgers · 2020", "#1a161c", "assets/covers/album-punisher.png"],
   ["A Seat at the Table", "Solange · 2016", "#1c1814", "assets/covers/album-a-seat-at-the-table.png"],
   ["Currents", "Tame Impala · 2015", "#15181c", "assets/covers/album-currents.png"],
   ["Pure Heroine", "Lorde · 2013", "#161616", "assets/covers/album-pure-heroine.png"],
-  ["Funeral", "Arcade Fire · 2004", "#1a1816", "assets/covers/album-funeral.jpg"],
   ["Lemonade", "Beyoncé · 2016", "#1b1814", "assets/covers/album-lemonade.png"],
   ["channel ORANGE", "Frank Ocean · 2012", "#1c1814", "assets/covers/album-channel-orange.jpg"],
   ["To Pimp a Butterfly", "Kendrick Lamar · 2015", "#15181c", "assets/covers/album-to-pimp-a-butterfly.png"],
   ["Melodrama", "Lorde · 2017", "#1a161c", "assets/covers/album-melodrama.png"],
   ["Bon Iver, Bon Iver", "Bon Iver · 2011", "#161a1c", "assets/covers/album-bon-iver-bon-iver.jpg"],
   ["The Suburbs", "Arcade Fire · 2010", "#181c1a", "assets/covers/album-the-suburbs.jpg"],
-  ["Rumours", "Fleetwood Mac · 1977", "#1a1916", "assets/covers/album-rumours.png"],
-  ["Sound & Color", "Alabama Shakes · 2015", "#15181c", "assets/covers/album-sound-color.jpg"],
   ["DAMN.", "Kendrick Lamar · 2017", "#1c1612", "assets/covers/album-damn.png"],
   ["In Rainbows", "Radiohead · 2007", "#181614", "assets/covers/album-in-rainbows.png"],
   ["Norman Fucking Rockwell!", "Lana Del Rey · 2019", "#161a1c", "assets/covers/album-norman-fucking-rockwell.png"],
@@ -68,6 +67,16 @@ const albums = [
   ["Igor", "Tyler, the Creator · 2019", "#1c1a14", "assets/covers/album-igor.jpg"],
   ["AM", "Arctic Monkeys · 2013", "#161616", "assets/covers/album-am.png"],
   ["The Miseducation of Lauryn Hill", "Lauryn Hill · 1998", "#1c1818", "assets/covers/album-the-miseducation-of-lauryn-hill.png"],
+  ["Brat", "Charli XCX · 2024", "#1a1c14", "assets/covers/album-brat.jpg"],
+  ["Hit Me Hard and Soft", "Billie Eilish · 2024", "#15181c", "assets/covers/album-hit-me-hard-and-soft.jpg"],
+  ["SOS", "SZA · 2022", "#161a1c", "assets/covers/album-sos-sza.jpg"],
+  ["GUTS", "Olivia Rodrigo · 2023", "#1c1818", "assets/covers/album-guts-olivia-rodrigo.jpg"],
+  ["Midnights", "Taylor Swift · 2022", "#15181c", "assets/covers/album-midnights.jpg"],
+  ["Renaissance", "Beyoncé · 2022", "#1b1814", "assets/covers/album-renaissance.jpg"],
+  ["The Rise and Fall of a Midwest Princess", "Chappell Roan · 2023", "#1c1612", "assets/covers/album-midwest-princess.jpg"],
+  ["Stick Season", "Noah Kahan · 2022", "#181c1a", "assets/covers/album-stick-season.jpg"],
+  ["Chromakopia", "Tyler, the Creator · 2024", "#1c1a14", "assets/covers/album-chromakopia.jpg"],
+  ["Short n' Sweet", "Sabrina Carpenter · 2024", "#1c1818", "assets/covers/album-short-n-sweet.jpg"],
 ];
 const books = [
   ["Normal People", "Sally Rooney", "#181a1c", "assets/covers/book-normal-people.png"],
@@ -80,18 +89,16 @@ const books = [
   ["Beloved", "Toni Morrison", "#1c1612", "assets/covers/book-beloved.jpg"],
   ["The Secret History", "Donna Tartt", "#1c1717", "assets/covers/book-the-secret-history.jpg"],
   ["The Road", "Cormac McCarthy", "#161616", "assets/covers/book-the-road.jpg"],
+  ["The Seven Husbands of Evelyn Hugo", "Taylor Jenkins Reid", "#1c1612", "assets/covers/book-evelyn-hugo.jpg"],
+  ["Tomorrow, and Tomorrow, and Tomorrow", "Gabrielle Zevin", "#181a1c", "assets/covers/book-tomorrow-and-tomorrow.jpg"],
+  ["The Song of Achilles", "Madeline Miller", "#1a1614", "assets/covers/book-song-of-achilles.jpg"],
 ];
 const podcasts = [
   ["The Daily", "The New York Times", "#1a1614", "assets/covers/podcast-the-daily.jpg"],
-  ["Conan O'Brien Needs A Friend", "Team Coco", "#1c1814", "assets/covers/podcast-conan-o-brien-needs-a-friend.jpg"],
-  ["Radiolab", "WNYC Studios", "#161a1c", "assets/covers/podcast-radiolab.jpg"],
-  ["This American Life", "WBEZ", "#1c1818", "assets/covers/podcast-this-american-life.png"],
   ["Song Exploder", "Hrishikesh Hirway", "#15161a", "assets/covers/podcast-song-exploder.png"],
-  ["Reply All", "Gimlet Media", "#1a1816", "assets/covers/podcast-reply-all.png"],
-  ["99% Invisible", "Roman Mars", "#181a1c", "assets/covers/podcast-99-invisible.png"],
   ["Serial", "Sarah Koenig", "#1c1612", "assets/covers/podcast-serial.png"],
-  ["Planet Money", "NPR", "#15181c", "assets/covers/podcast-planet-money.webp"],
-  ["Revisionist History", "Malcolm Gladwell", "#161a1c", "assets/covers/podcast-revisionist-history.webp"],
+  ["Call Her Daddy", "Alex Cooper", "#1c1818", "assets/covers/podcast-call-her-daddy.jpg"],
+  ["Anything Goes", "Emma Chamberlain", "#181614", "assets/covers/podcast-anything-goes.jpg"],
 ];
 
 const allMedia = [...films, ...albums, ...books, ...podcasts];
@@ -103,13 +110,15 @@ function tileHTML(opts) {
   const kind = opts.kind || "";
   const tone = opts.tone || "#161616";
   const cover = opts.cover || "";
+  const square = !!opts.square;
   const hasCover = !!cover;
   const k = kind ? '<div class="tile-kind">' + kind + '</div>' : '<div class="tile-kind"></div>';
   const img = hasCover
     ? '<img class="tile-image" src="' + cover + '" alt="" loading="lazy" referrerpolicy="no-referrer" />'
     : '';
+  const cls = 'tile' + (hasCover ? ' has-cover' : '') + (square ? ' square' : '');
   return (
-    '<div class="tile' + (hasCover ? ' has-cover' : '') + '" style="--tile-tone:' + tone + '">' +
+    '<div class="' + cls + '" style="--tile-tone:' + tone + '">' +
       img +
       k +
       '<div class="tile-meta">' +
@@ -132,17 +141,28 @@ function shuffle(arr) {
 function buildHeroWall() {
   const wall = document.getElementById("hero-wall");
   if (!wall) return;
-  const COLS = 7;
+  const COLS = 8;
   const PER_COL = 8;
-  const deck = shuffle(allMedia);
+  // Tag each entry with its real kind so we can style albums/podcasts as squares
+  const tagged = [
+    ...films.map(e => ({ title: e[0], creator: e[1], tone: e[2], cover: e[3], kind: "FILM" })),
+    ...albums.map(e => ({ title: e[0], creator: e[1], tone: e[2], cover: e[3], kind: "ALBUM" })),
+    ...books.map(e => ({ title: e[0], creator: e[1], tone: e[2], cover: e[3], kind: "BOOK" })),
+    ...podcasts.map(e => ({ title: e[0], creator: e[1], tone: e[2], cover: e[3], kind: "PODCAST" })),
+  ];
+  const deck = shuffle(tagged);
+  const slots = COLS * PER_COL;
+  // If deck is smaller than slots, recycle (shouldn't happen now but defensive)
+  while (deck.length < slots) deck.push(...shuffle(tagged));
   for (let c = 0; c < COLS; c++) {
     const col = document.createElement("div");
     col.className = "wall-col";
     const items = deck.slice(c * PER_COL, (c + 1) * PER_COL);
-    const html = [...items, ...items].map((entry, i) => {
-      const t = entry[0], cr = entry[1], tone = entry[2], cover = entry[3];
-      const kind = i % 4 === 0 ? "FILM" : i % 4 === 1 ? "ALBUM" : i % 4 === 2 ? "BOOK" : "PODCAST";
-      return tileHTML({ title: t, creator: cr, kind: kind, tone: tone, cover: cover });
+    const html = [...items, ...items].map((e) => {
+      // Albums are square (1:1 art); books/films stay vertical (2:3 poster).
+      // Podcasts also have square cover art so they get the square treatment too.
+      const square = e.kind === "ALBUM" || e.kind === "PODCAST";
+      return tileHTML({ title: e.title, creator: e.creator, kind: e.kind, tone: e.tone, cover: e.cover, square: square });
     }).join("");
     col.innerHTML = html;
     wall.appendChild(col);
